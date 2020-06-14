@@ -1,0 +1,31 @@
+HackerRank
+1.Python:Reverse Words and swap Cases
+Complete the 'reverse_words_order_and_swap_cases' function below.
+
+def swap_case(s):
+    return s.swapcase()
+
+def reverse_words_order_and_swap_cases(sentence):
+    sentence=swap_case(sentence)
+    a=sentence.split()
+    a.reverse()
+    result=" ".join(a)
+    return result
+
+
+
+2.Python:shape classes with area method
+Complete two classes consist of one constructor and one area method 
+
+class Rectangle:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def area(self):
+        return a*b
+
+class Circle:
+    def __init__(self, radius):
+        self.radius=radius
+    def area(self):
+        return math.pi*(self.radius**2)
